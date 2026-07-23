@@ -146,41 +146,30 @@ document.addEventListener('DOMContentLoaded', () => {
         'help': `Mevcut komutlar:
 <span class="t-cyan">about</span>       - Hakkımda ve mühendislik profili
 <span class="t-cyan">education</span>   - Lisans ve mezuniyet bilgisi
-<span class="t-cyan">skills</span>      - Diller ve teknik yetenekler (PyTorch, Flutter, C++)
-<span class="t-cyan">projects</span>    - Geliştirilen öne çıkan projeler
+<span class="t-cyan">skills</span>      - Diller ve teknik yetenekler
+<span class="t-cyan">projects</span>    - Gerçek GitHub projelerim (6 Adet)
 <span class="t-cyan">certificates</span>- İndirilebilir 12 teknik sertifika
 <span class="t-cyan">contact</span>     - İletişim bilgileri ve sosyal hesaplar
 <span class="t-cyan">clear</span>       - Terminal ekranını temizle
 <span class="t-cyan">whoami</span>      - Kullanıcı kimlik bilgisi`,
 
         'about': `Mustafa Ali Ertuğrul - Bilgisayar Mühendisi (B.Sc.)
-Yapay Zeka, PyTorch Derin Öğrenme, Flutter Mobil ve Python Geliştirici.`,
+Multi-Agent Sistemler, Siber Güvenlik AI (NetMind-AI), BIST Algotrading ve PyTorch Geliştirici.`,
 
         'education': `Mezuniyet: Bilgisayar Mühendisliği (2024)
 GNO: 3.85 / 4.00 (Yüksek Onur Derecesi)
-Sertifikalar: 12 Adet Uzmanlık Sertifikası`,
+GitHub Projeleri: 6 Adet Açık Kaynak Repository`,
 
         'skills': `Diller: Python, C++, Java, Dart, SQL, JavaScript
-Yapay Zeka: PyTorch, Makine Öğrenmesi, Derin Öğrenme, Prompt Engineering
-Mobil & Araçlar: Flutter, Docker, Git, Linux`,
+Siber Güvenlik & AI: NetMind-AI, Multi-Agent MCP, PyTorch, RAG
+Mobil & Web: Streamlit, Flutter, Docker, Git, Linux`,
 
-        'certificates': `1. PyTorch ile Derin Öğrenme Algoritmaları
-2. Python ile Makine Öğrenmesi
-3. Flutter ile Mobil Uygulama Geliştirme
-4. Dart Programlama Dili
-5. Uygulamalarla SQL Öğreniyorum
-6. Sıfırdan İleri Seviye Python Programlama
-7. C++ ile Programlamaya Giriş
-8. JAVA ile Programlamaya Giriş
-9. Büyük Veriye Giriş
-10. Prompt Mühendisliği
-11. Python ile Topluluk Öğrenmesi Pratikleri
-12. İleri Seviye Python Programlama Dili`,
-
-        'projects': `1. PyTorch Derin Öğrenme & Anomali Tespiti
-2. Flutter Cross-Platform Mobil Uygulaması
-3. C++ & Java Veri Mimarisi
-4. Büyük Veri Analitiği & SQL Sorgu Optimizasyonu`,
+        'projects': `1. NetMind-AI (Siber Güvenlik & PCAP Trafik Analizi)
+2. Multi-Agent (Otonom Kod Analizi & PR Robotu)
+3. allbrain-mcp (Multi-Agent MCP Orchestration Runtime)
+4. bist-bot (BIST Borsa Algotrading Platformu)
+5. docmind-ai (Yapay Zeka Doküman Analizi & RAG)
+6. Machine Learning Bird Disease Diagnosis (Görüntü İşleme & Teşhis)`,
 
         'contact': `Telefon: 0551 086 74 93
 E-posta: ertugrulmustafaali@gmail.com
