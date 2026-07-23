@@ -154,9 +154,10 @@ document.addEventListener('DOMContentLoaded', () => {
 <span class="t-cyan">whoami</span>      - Kullanıcı kimlik bilgisi`,
 
         'about': `Mustafa Ali Ertuğrul - Bilgisayar Mühendisi (B.Sc.)
+Burdur Mehmet Akif Ersoy Üniversitesi Mezunu.
 Multi-Agent Sistemler, Siber Güvenlik AI (NetMind-AI), BIST Algotrading ve PyTorch Geliştirici.`,
 
-        'education': `Mezuniyet: Bilgisayar Mühendisliği (2024)
+        'education': `Mezuniyet: Burdur Mehmet Akif Ersoy Üniversitesi - Bilgisayar Mühendisliği (2024)
 GNO: 3.85 / 4.00 (Yüksek Onur Derecesi)
 GitHub Projeleri: 6 Adet Açık Kaynak Repository`,
 
