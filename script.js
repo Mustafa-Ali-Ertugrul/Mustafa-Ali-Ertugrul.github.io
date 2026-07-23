@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MATRIX PORTFOLIO INTERACTIVE JAVASCRIPT LOGIC
+   MATRIX AI SYSTEMS ENGINEER PORTFOLIO - JAVASCRIPT LOGIC
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', initDrops);
 
         function drawMatrix() {
-            ctx.fillStyle = 'rgba(5, 11, 8, 0.08)';
+            ctx.fillStyle = 'rgba(4, 8, 6, 0.08)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             ctx.fillStyle = '#00FF66';
@@ -144,40 +144,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const commands = {
         'help': `Mevcut komutlar:
-<span class="t-cyan">about</span>       - Hakkımda ve mühendislik profili
-<span class="t-cyan">education</span>   - Lisans ve mezuniyet bilgisi
-<span class="t-cyan">skills</span>      - Diller ve teknik yetenekler
-<span class="t-cyan">projects</span>    - Gerçek GitHub projelerim (6 Adet)
-<span class="t-cyan">certificates</span>- İndirilebilir 12 teknik sertifika
-<span class="t-cyan">contact</span>     - İletişim bilgileri ve sosyal hesaplar
+<span class="t-cyan">allbrain</span>    - AllBrain MCP sistem mimarisi vaka incelemesi
+<span class="t-cyan">projects</span>    - Üretim seviyesinde öne çıkan sistemler
+<span class="t-cyan">stack</span>       - AI & Multi-Agent mühendislik yetenekleri
+<span class="t-cyan">education</span>   - Lisans ve akademik geçmiş
+<span class="t-cyan">contact</span>     - İletişim & sosyal bağlantılar
 <span class="t-cyan">clear</span>       - Terminal ekranını temizle
 <span class="t-cyan">whoami</span>      - Kullanıcı kimlik bilgisi`,
 
-        'about': `Mustafa Ali Ertuğrul - Bilgisayar Mühendisi (B.Sc.)
-Burdur Mehmet Akif Ersoy Üniversitesi Mezunu.
-Multi-Agent Sistemler, Siber Güvenlik AI (NetMind-AI), BIST Algotrading ve PyTorch Geliştirici.`,
+        'allbrain': `AllBrain MCP (Multi-Agent Control Protocol Engine)
+- Event Sourcing & Değişmez Zaman Çizelgesi
+- Çelişki ve Güvenilirlik Skorlama Motoru (Trust & Uncertainty)
+- MCP Protocol Standardına Uygun Araç Çağırma ve Kiralama
+- Otonom Senaryo Simülasyonu ve Meta-Öğrenme`,
 
-        'education': `Mezuniyet: Burdur Mehmet Akif Ersoy Üniversitesi - Bilgisayar Mühendisliği (2024)
-GNO: 3.85 / 4.00 (Yüksek Onur Derecesi)
-GitHub Projeleri: 6 Adet Açık Kaynak Repository`,
+        'about': `Mustafa Ali Ertuğrul - Computer Engineer & AI Systems Developer
+Odak Alanları: AllBrain MCP, Multi-Agent Sistemler, Siber Güvenlik AI (NetMind-AI), BIST Algotrading.`,
 
-        'skills': `Diller: Python, C++, Java, Dart, SQL, JavaScript
-Siber Güvenlik & AI: NetMind-AI, Multi-Agent MCP, PyTorch, RAG
-Mobil & Web: Streamlit, Flutter, Docker, Git, Linux`,
+        'education': `Lisans: Burdur Mehmet Akif Ersoy Üniversitesi - Bilgisayar Mühendisliği
+GNO: 3.85 / 4.00 (Yüksek Onur Derecesi)`,
 
-        'projects': `1. NetMind-AI (Siber Güvenlik & PCAP Trafik Analizi)
+        'stack': `AI & Agent: Model Context Protocol (MCP), Multi-Agent Orchestration, PyTorch, RAG
+Core Languages: Python 3.11+ (Expert), C/C++, Java, SQL, Dart
+Platforms: Linux, Docker, PCAP Traffic Engine, Streamlit, Flutter`,
+
+        'projects': `1. AllBrain MCP (Multi-Agent Control & Orchestration Core)
 2. Multi-Agent (Otonom Kod Analizi & PR Robotu)
-3. allbrain-mcp (Multi-Agent MCP Orchestration Runtime)
+3. NetMind-AI (Siber Güvenlik & PCAP Trafik Analizi)
 4. bist-bot (BIST Borsa Algotrading Platformu)
-5. docmind-ai (Yapay Zeka Doküman Analizi & RAG)
-6. Machine Learning Bird Disease Diagnosis (Görüntü İşleme & Teşhis)`,
+5. DocMind-AI (Yapay Zeka Doküman Analizi & RAG)`,
 
-        'contact': `Telefon: 0551 086 74 93
-E-posta: ertugrulmustafaali@gmail.com
+        'contact': `E-posta: ertugrulmustafaali@gmail.com
 LinkedIn: linkedin.com/in/mustafa-ali-ertuğrul
 GitHub: github.com/Mustafa-Ali-Ertugrul`,
 
-        'whoami': `root@matrix-guest: Mustafa Ali Ertuğrul'un Portföy Ziyaretçisi`
+        'whoami': `root@allbrain-core: Mustafa Ali Ertuğrul'un Sistem Mimarı Portföyü`
     };
 
     if (terminalInput && terminalOutput) {
@@ -188,7 +189,7 @@ GitHub: github.com/Mustafa-Ali-Ertugrul`,
 
                 const echoLine = document.createElement('p');
                 echoLine.className = 'term-line';
-                echoLine.innerHTML = `<span class="term-prompt">mustafa@engineer:~$</span> ${cmd}`;
+                echoLine.innerHTML = `<span class="term-prompt">mustafa@allbrain:~$</span> ${cmd}`;
                 terminalOutput.appendChild(echoLine);
 
                 if (cmd === 'clear') {
