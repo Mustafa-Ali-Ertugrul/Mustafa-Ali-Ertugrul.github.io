@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
 Odak Alanları: AllBrain MCP, Multi-Agent Sistemler, Siber Güvenlik AI (NetMind-AI), BIST Algotrading.`,
 
         'education': `Lisans: Burdur Mehmet Akif Ersoy Üniversitesi - Bilgisayar Mühendisliği
-GNO: 3.85 / 4.00 (Yüksek Onur Derecesi)`,
+GNO: 2.80 / 4.00`,
 
         'stack': `AI & Agent: Model Context Protocol (MCP), Multi-Agent Orchestration, PyTorch, RAG
 Core Languages: Python 3.11+ (Expert), C/C++, Java, SQL, Dart
