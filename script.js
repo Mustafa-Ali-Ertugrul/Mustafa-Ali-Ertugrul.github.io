@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        // Matrix character set
         const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
         const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>/{}[];:=+*&^%$#@!';
         const alphabet = katakana + latin;
@@ -147,31 +146,45 @@ document.addEventListener('DOMContentLoaded', () => {
         'help': `Mevcut komutlar:
 <span class="t-cyan">about</span>       - Hakkımda ve mühendislik profili
 <span class="t-cyan">education</span>   - Lisans ve mezuniyet bilgisi
-<span class="t-cyan">skills</span>      - Diller ve teknik yetenekler
+<span class="t-cyan">skills</span>      - Diller ve teknik yetenekler (PyTorch, Flutter, C++)
 <span class="t-cyan">projects</span>    - Geliştirilen öne çıkan projeler
-<span class="t-cyan">contact</span>     - İletişim bilgileri
+<span class="t-cyan">certificates</span>- İndirilebilir 12 teknik sertifika
+<span class="t-cyan">contact</span>     - İletişim bilgileri ve sosyal hesaplar
 <span class="t-cyan">clear</span>       - Terminal ekranını temizle
 <span class="t-cyan">whoami</span>      - Kullanıcı kimlik bilgisi`,
 
         'about': `Mustafa Ali Ertuğrul - Bilgisayar Mühendisi (B.Sc.)
-İstanbul Teknik Üniversitesi mezunu.
-İlgi Alanları: Dağıtık Sistemler, Yapay Zeka, Web Performansı.`,
+Yapay Zeka, PyTorch Derin Öğrenme, Flutter Mobil ve Python Geliştirici.`,
 
-        'education': `Mezuniyet: İTÜ Bilgisayar Mühendisliği (2024)
+        'education': `Mezuniyet: Bilgisayar Mühendisliği (2024)
 GNO: 3.85 / 4.00 (Yüksek Onur Derecesi)
-Bitirme Projesi: Dağıtık Mimarilerde ML ile Anomali Tespiti`,
+Sertifikalar: 12 Adet Uzmanlık Sertifikası`,
 
-        'skills': `Diller: Python, JavaScript, C++, Go, SQL, Java
-Frameworkler: React, Node.js, Next.js, Express, FastAPI
-Araçlar: Docker, AWS, Git, Linux, PostgreSQL, MongoDB`,
+        'skills': `Diller: Python, C++, Java, Dart, SQL, JavaScript
+Yapay Zeka: PyTorch, Makine Öğrenmesi, Derin Öğrenme, Prompt Engineering
+Mobil & Araçlar: Flutter, Docker, Git, Linux`,
 
-        'projects': `1. MatrixVision AI (Python/PyTorch/YOLO)
-2. CyberVault Ağ Tarayıcı (C++/Multithreading)
-3. DevPulse Dashboard (React/Node.js)
-4. CloudScale Microservice Engine (Go/Docker)`,
+        'certificates': `1. PyTorch ile Derin Öğrenme Algoritmaları
+2. Python ile Makine Öğrenmesi
+3. Flutter ile Mobil Uygulama Geliştirme
+4. Dart Programlama Dili
+5. Uygulamalarla SQL Öğreniyorum
+6. Sıfırdan İleri Seviye Python Programlama
+7. C++ ile Programlamaya Giriş
+8. JAVA ile Programlamaya Giriş
+9. Büyük Veriye Giriş
+10. Prompt Mühendisliği
+11. Python ile Topluluk Öğrenmesi Pratikleri
+12. İleri Seviye Python Programlama Dili`,
 
-        'contact': `E-posta: mustafa.ali.ertugrul@example.com
-Konum: İstanbul, Türkiye
+        'projects': `1. PyTorch Derin Öğrenme & Anomali Tespiti
+2. Flutter Cross-Platform Mobil Uygulaması
+3. C++ & Java Veri Mimarisi
+4. Büyük Veri Analitiği & SQL Sorgu Optimizasyonu`,
+
+        'contact': `Telefon: 0551 086 74 93
+E-posta: ertugrulmustafaali@gmail.com
+LinkedIn: linkedin.com/in/mustafa-ali-ertuğrul
 GitHub: github.com/Mustafa-Ali-Ertugrul`,
 
         'whoami': `root@matrix-guest: Mustafa Ali Ertuğrul'un Portföy Ziyaretçisi`
@@ -207,42 +220,7 @@ GitHub: github.com/Mustafa-Ali-Ertugrul`,
             }
         });
     }
-
-    // ----------------------------------------------------------------------
-    // 6. CV DOWNLOAD BUTTON HANDLER
-    // ----------------------------------------------------------------------
-    const downloadCvBtn = document.getElementById('downloadCvBtn');
-    if (downloadCvBtn) {
-        downloadCvBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('CV indiriliyor... (GitHub Pages üzerinde kendi CV PDF belgenizin bağlantısını ekleyebilirsiniz)');
-        });
-    }
 });
-
-// --------------------------------------------------------------------------
-// 7. CERTIFICATE MODAL FUNCTIONS
-// --------------------------------------------------------------------------
-function openCertModal(title, desc, imgSrc) {
-    const modal = document.getElementById('certModal');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalDesc = document.getElementById('modalDesc');
-    const modalImg = document.getElementById('modalImg');
-
-    if (modal && modalTitle && modalDesc && modalImg) {
-        modalTitle.innerText = title;
-        modalDesc.innerText = desc;
-        modalImg.src = imgSrc;
-        modal.classList.add('open');
-    }
-}
-
-function closeCertModal() {
-    const modal = document.getElementById('certModal');
-    if (modal) {
-        modal.classList.remove('open');
-    }
-}
 
 // Form Submission simulation
 function handleFormSubmit(e) {
